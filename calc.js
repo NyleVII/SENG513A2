@@ -4,7 +4,7 @@ let prevCalcStr = "0"
 
 
 function getResult(){
-    prevCalcStr = displayStr + "=";
+    prevCalcStr = displayStr + " =";
 
     try {
         displayStr = math.eval(displayStr);

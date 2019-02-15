@@ -12,6 +12,7 @@ button {
     font-size: 2em;
     width: 20%;
     flex: auto;
+    margin: 5px;
 }
 
 .row {
@@ -27,7 +28,6 @@ button {
 #calculator {
     border: 1px black solid;
     width: 600px;
-    height: 400px;
     margin: auto;
     background: lightgray;
     display: flex;
@@ -37,24 +37,21 @@ button {
 #prevCalc {
     text-align: right;
     font-size: 1em;
-    width: 100%;
+    margin: 5px;
 }
 
 #display {
     background: white;
     text-align: right;
     font-size: 3em;
-    width: 100%;
+    margin: 5px;
+    border: 1px solid darkgray;
 
 }
 
 
 
 @media (max-width: 600px){
-    body {
-        background: blue;
-    }
-
     #calculator {
         width: 100%;
     }

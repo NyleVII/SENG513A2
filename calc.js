@@ -10,7 +10,7 @@ function getResult(){
         displayStr = math.eval(displayStr);
     }
     catch (e){
-        displayStr = "ERROR";
+        displayStr = "ERROR"; //For incorrect syntax
     }
 
     document.getElementById("prevCalc").innerHTML = prevCalcStr;

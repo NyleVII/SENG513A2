@@ -1,0 +1,61 @@
+
+
+/* button {
+    width: 20%;
+    height: 100px;
+    background: lightblue;
+    font-size: 3em;
+} */
+
+button {
+    background: lightblue;
+    font-size: 2em;
+    width: 20%;
+    flex: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#clear {
+    width: 45%;
+}
+
+#calculator {
+    border: 1px black solid;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+#prevCalc {
+    text-align: right;
+    font-size: 1em;
+    width: 100%;
+}
+
+#display {
+    background: white;
+    text-align: right;
+    font-size: 3em;
+    width: 100%;
+
+}
+
+
+
+@media (max-width: 600px){
+    body {
+        background: blue;
+    }
+
+    #calculator {
+        width: 100%;
+    }
+}

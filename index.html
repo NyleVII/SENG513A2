@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="calc.js"></script>
+    <script src="math.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="prevCalc">
+            0
+        </div>
+        <div id="display">
+            0
+        </div>
+        <div class="row"> <!-- Row ( ) C -->
+            <button type="button" onclick="updateDisplay('(')">(</button>
+            <button type="button" onclick="updateDisplay(')')">)</button>
+            <button id="clear" type="button" onclick="updateDisplay('')">C</button>
+
+        </div>
+        <div class="row"> <!-- Row 7 8 9 / -->
+            <button type="button" onclick="updateDisplay('7')">7</button>
+            <button type="button" onclick="updateDisplay('8')">8</button>
+            <button type="button" onclick="updateDisplay('9')">9</button>
+            <button type="button" onclick="updateDisplay('/')">/</button>
+
+        </div>
+        <div class="row">  <!-- Row 4 5 6 * -->
+            <button type="button" onclick="updateDisplay('4')">4</button>
+            <button type="button" onclick="updateDisplay('5')">5</button>
+            <button type="button" onclick="updateDisplay('6')">6</button>
+            <button type="button" onclick="updateDisplay('*')">*</button>
+
+        </div>
+        <div class="row"><!-- Row 1 2 3 - -->
+            <button type="button" onclick="updateDisplay('1')">1</button>
+            <button type="button" onclick="updateDisplay('2')">2</button>
+            <button type="button" onclick="updateDisplay('3')">3</button>
+            <button type="button" onclick="updateDisplay('-')">-</button>
+
+        </div>
+        <div class="row"> <!-- Row 0 . = + -->
+            <button type="button" onclick="updateDisplay('0')">0</button>
+            <button type="button" onclick="updateDisplay('.')">.</button>
+            <button type="button" onclick="getResult()">=</button>
+            <button type="button" onclick="updateDisplay('+')">+</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

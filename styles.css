@@ -8,11 +8,17 @@
 } */
 
 button {
-    background: lightblue;
+    background: lightgrey;
+    border: 1px solid lightgray;
     font-size: 2em;
     width: 20%;
     flex: auto;
     margin: 5px;
+}
+
+button:hover {
+    border: 1px solid darkgray;
+    box-shadow: 2px 2px 5px 0px lightgray;
 }
 
 .row {
@@ -21,15 +27,25 @@ button {
     justify-content: center;
 }
 
-#clear {
+.opsBtn {
+    background: rgb(154, 170, 187);
+}
+
+#clearBtn {
     width: 45%;
+    background: lightsteelblue;
+}
+
+#equalsBtn {
+    background: rgb(94, 161, 228);
 }
 
 #calculator {
     border: 1px black solid;
+    border-radius: 10px;
     width: 600px;
     margin: auto;
-    background: lightgray;
+    background: ghostwhite;
     display: flex;
     flex-direction: column;
 }
@@ -38,6 +54,7 @@ button {
     text-align: right;
     font-size: 1em;
     margin: 5px;
+    padding: 0px 5px;
 }
 
 #display {
@@ -46,7 +63,7 @@ button {
     font-size: 3em;
     margin: 5px;
     border: 1px solid darkgray;
-
+    padding: 0px 5px;
 }
 
 
